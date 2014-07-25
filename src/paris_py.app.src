@@ -1,0 +1,11 @@
+{application, paris_py,
+ [
+  {description, "Plugin for paris allowing to create Python controllers"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
