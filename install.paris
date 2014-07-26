@@ -1,6 +1,6 @@
 {name, paris_py}.
 {rebar, [
-  {add, []}]},
+  {add, []},
   {remove, []}
 ]}.
 {mv_args, [
