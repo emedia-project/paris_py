@@ -44,7 +44,7 @@ get_python_lib(ScriptFile) ->
 get_controller_file(Controller) ->
   ControllerMatch = efile:normalize_path(
       filename:join(
-        [paris:priv_dir(), "..", "src", "controller", atom_to_list(Controller) ++ ".*"])),
+        [paris:priv_dir(), "..", "src", "controllers", atom_to_list(Controller) ++ ".*"])),
   case filelib:wildcard(ControllerMatch) of
     [ControllerFile|_] -> {ok, ControllerFile};
     _ -> {error, not_found}
